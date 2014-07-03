@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>July 2014</title>
+		<title>The New Website is Up!</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://kevinraymond.smallpict.com/rss.xml" />
@@ -42,8 +42,8 @@
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "readable",
-    "type": "bloghome",
-    "slogan": "What a long strange trip it's been.",
+    "type": "outline",
+    "slogan": "Still diggin!",
     "disqusGroupName": "smallpict",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,10 +66,10 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
-    "text": "July 2014",
-    "created": "Tue, 01 Jul 2014 12:51:26 GMT",
+    "text": "The New Website is Up!",
+    "created": "Thu, 03 Jul 2014 12:56:13 GMT",
     "description": "",
-    "path": "2014/07",
+    "path": "2014/07/03/theNewWebsiteIsUpAndRunning",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -83,13 +83,14 @@
     "streamTextFrameColor": "whitesmoke",
     "streamVersion": "2",
     "flEmojify": "true",
-    "name": "07",
+    "name": "theNewWebsiteIsUpAndRunning",
     "icon": "calendar",
+    "isFeedItem": "true",
     "cssUrl": "http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css",
     "menuTitle": "Kevin Raymond's Blog",
     "now": "Thu Jul 03 2014 13:12:10 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Kevin Raymond.",
-    "url": "http://kevinraymond.smallpict.com/2014/07.html"
+    "url": "http://kevinraymond.smallpict.com/2014/07/03/theNewWebsiteIsUpAndRunning.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -119,7 +120,7 @@
 					margin-bottom: 5px;
 					}
 				.divPrevNext {
-					float: none;
+					font-size: 1.2em;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -134,8 +135,47 @@
 					}
 				}
 			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
+				}
+			</style>
 		<!-- customStylesScripts -->
 		
+		<script>
+			function startupOutlineTemplate () {
+				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/KevRaymond" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
@@ -160,17 +200,19 @@
 	</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://kevinraymond.smallpict.com">Home</a><span class="divider">/</span><li><a href="http://kevinraymond.smallpict.com/2014">2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">July 2014</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="03/theNewWebsiteIsUpAndRunning.html">The New Website is Up!</a></div>
-		<p><center><img src="https://dl.dropbox.com/s/z9b1lca14rawjay/Bruins%20Cheering.jpg" alt="" title="" /></center></p>
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://kevinraymond.smallpict.com/2014/07/01/thePersonalWebsiteBattleContinues.html" title="The Personal Website Battle Continues" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://kevinraymond.smallpict.com">Home</a><span class="divider">/</span><li><a href="http://kevinraymond.smallpict.com/2014">2014</a><span class="divider">/</span><li><a href="http://kevinraymond.smallpict.com/2014/07">July 2014</a><span class="divider">/</span><li><a href="http://kevinraymond.smallpict.com/2014/07/03">July 3</a></li></ul>
+								</div>
+							<h2>The New Website is Up!</h2>
+							</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p><center><img src="https://dl.dropbox.com/s/z9b1lca14rawjay/Bruins%20Cheering.jpg" alt="" title="" /></center></p>
 
 <p>After a week of schizophrenic fits, I finally came to a conclusion regarding my personal website. All of this came about after discovering Fargo, my new favorite outliner/web publisher. Over the years my personal website/blogs have been disjointed and boring. Yes, this could happen again, but I hope not. </p>
 
@@ -212,54 +254,20 @@
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/03/14; 07:56:13 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="03/theNewWebsiteIsUpAndRunning.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="01/thePersonalWebsiteBattleContinues.html">The Personal Website Battle Continues</a></div>
-		<p><center><img src="https://dl.dropbox.com/s/lmyqoub545xcuoj/The%20Battle.jpg" alt="" title="" /></center></p>
-
-<p>After some careful reading of the <a href="http://fargo.io/docs/contentManagement/usingGithub.html">directions</a>, a few hours of missteps and some coffee. I successfully used <a href="https://github.com/">Github</a> Pages to host my Fargo blog at <a href="http://kevinraymond.net/">kevinraymond.net</a>. </p>
-
-<p><strong>A few things I learned....</strong></p>
-
-<ol>
-<li><p><strong>In Github, committing is kinda like publishing.</strong> Once you have rendered the pages in Fargo, they are added to the folder in your Dropbox ( if you have added, #siteFolder "username.github.io" in your outline. It's in the directions.) and ready to be committed in the Github program on your Mac or Windows machine.</p></li>
-<li><p><strong>I use a Chromebook</strong>, but have a Windows computer at work which I can log into anytime I need. Therefore, I can render my pages and go to my Windows machine remotely to commit them in the Github program. I guess this is what you would call a work around.</p></li>
-<li><p><strong>Reading directions is key</strong>. So read them <a href="http://fargo.io/docs/contentManagement/usingGithub.html">here</a>.</p></li>
-<li><p><strong>Patience is your friend.</strong> One of the main reasons I got so frustrated was my lack of patience for things to reconcile on the server etc. Waiting 10 minutes was like an eternity. I blame society for this. I think the best pet detective in the biz, Ace Ventura said it best, "If I'm not back in five minutes. Just wait longer."</p></li>
-</ol>
-
-<p>The excitement of the accomplishment was euphoric. Strange for something so simple. I have basic computing skills, but this was my first venture into something this tricky. And honestly, it wasn't difficult after taking the time to check all my steps. </p>
-
-<p>However.....</p>
-
-<p>Now I am wondering if hosting a regular site at kevinraymond.net is better and using something like blog.kevinraymond.net for the blog, which would be hosted through Github. I have no idea if this makes sense or if I am being a non savvy computer person. ( Apologies for lack of terminology if you're reading this and live in the computing world. I fabricate sheet metal for a living so I am kind of a layman)</p>
-
-<p>Anyway. My thought is, I could host the main site, giving me the ability to create sub pages like blog.kevinraymond.net and links.kevinraymond.net for my Fargo blog and link page. </p>
-
-<p>Am I on the right track? I realize there are so many ways to get a site started. I am hoping to keep it low cost and use my brain to figure some things out. Plus, it's fun. </p>
-
-<p>If you have any suggestions please leave them in the comments or tweet me <a href="http://twitter.com/KevRaymond">@KevRaymond</a>. Thanks!</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/01/14; 07:51:26 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="01/thePersonalWebsiteBattleContinues.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Thu, Jul  3, 2014 at 12:12 PM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/gm4gdb9hout8unx/myBlog.opmlTue, 01 Jul 2014 12:51:26 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/smallpict/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="" target="_blank">Kevin Raymond</a>, <span id="idWhenCreated">Tuesday, July  1, 2014 at  7:51 AM</span>.</div>
-					</div>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Thu, Jul  3, 2014 at 12:12 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/gm4gdb9hout8unx/myBlog.opmlThu, 03 Jul 2014 12:56:13 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/smallpict/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="" target="_blank">Kevin Raymond</a>, <span id="idWhenCreated">Thursday, July  3, 2014 at  7:56 AM</span>.  <span class="spSlogan" style="float: right;"><i>Still diggin!</i></span></div>
+							</div>
+						</div>
+						</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
+			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>
