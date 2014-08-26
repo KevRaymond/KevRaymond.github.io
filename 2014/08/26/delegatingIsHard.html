@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>August 2014</title>
+		<title>Delegating is Hard</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://kevinraymond.smallpict.comrss.xml" />
@@ -43,8 +43,8 @@
     "googleAnalyticsID": "",
     "domain": "knockingtinblog.com",
     "bootstrapTheme": "readable",
-    "type": "bloghome",
-    "slogan": "Yeah well, that's just, you know, like, your opinion, man.",
+    "type": "outline",
+    "slogan": "Greetings, citizen of Planet Earth. We are your overlords. :-)",
     "disqusGroupName": "smallpict",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -69,10 +69,10 @@
     "maxStreamDays": "14",
     "flMarkdown": true,
     "leftIndent": 0,
-    "text": "August 2014",
-    "created": "Mon, 25 Aug 2014 00:16:38 GMT",
+    "text": "Delegating is Hard",
+    "created": "Tue, 26 Aug 2014 12:37:30 GMT",
     "description": "",
-    "path": "2014/08",
+    "path": "2014/08/26/delegatingIsHard",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -86,13 +86,13 @@
     "streamTextFrameColor": "whitesmoke",
     "streamVersion": "2",
     "flEmojify": "true",
-    "name": "08",
+    "name": "delegatingIsHard",
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css",
     "menuTitle": "Kevin Raymond's Blog",
     "now": "Tue Aug 26 2014 14:13:41 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Kevin Raymond.",
-    "url": "http://kevinraymond.smallpict.com/2014/08.html"
+    "url": "http://kevinraymond.smallpict.com/2014/08/26/delegatingIsHard.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -122,7 +122,7 @@
 					margin-bottom: 5px;
 					}
 				.divPrevNext {
-					float: none;
+					font-size: 1.2em;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -137,8 +137,122 @@
 					}
 				}
 			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
+				}
+			</style>
+		<style>
+			.divOutlineNoMarkdown {
+				font-size: 20px;
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				}
+			.divOutlineNoMarkdown .ulOutlineList {
+				padding: 0;
+				margin: 0;
+				}
+			.divOutlineNoMarkdown .liOutline {
+				list-style-type: none;
+				margin-bottom: .5em;
+				}
+			.divOutlineNoMarkdown .divOutlineHead {
+				font-weight: bold;
+				margin-top: 13px;
+				margin-bottom: 13px;
+				}
+			.divOutlineNoMarkdown .liHasSubs ul {
+				}
+			.divOutlineNoMarkdown .liNoSubs {
+				}
+			.divOutlineNoMarkdown .spOutlineIcon {
+				margin-right: -11px;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink {
+				color: black;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink i {
+				color: black;
+				cursor: pointer;
+				position: relative;
+				width: .5em;
+				left: -1em;
+				}
+			.divOutlineNoMarkdown .aOutlineTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divOutlineNoMarkdown .spPermalink {
+				}
+			.divOutlineNoMarkdown .spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 10px;
+				font-weight: normal;
+				vertical-align: top;
+				margin-left: 3px;
+				}
+			.divOutlineNoMarkdown code {
+				display: inline;
+				border: none;
+				color: black;
+				font-size: .85em;
+				}
+			</style>
 		<!-- customStylesScripts -->
 		
+		<script>
+			function ecOutline (idnum) { //7/12/14 by DW
+				var c = document.getElementById ("idOutlineWedge" + idnum), idUL = "#idOutlineLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					c.style.color = "black";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					c.style.color = "silver";
+					$(idUL).slideDown (75);
+					}
+				}
+			function startupOutlineTemplate () {
+				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/KevRaymond" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
@@ -163,17 +277,19 @@
 	</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://kevinraymond.smallpict.com">Home</a><span class="divider">/</span><li><a href="http://kevinraymond.smallpict.com/2014">2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">August 2014</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="26/delegatingIsHard.html">Delegating is Hard</a></div>
-		<p>This will be the second year I've had help in the fabrication shop from time to time. The extra hands have been nothing but a god send for helping to move the company forward (duh). Every new step we take as a business means a change from how I've done things for 10+ years in the shop. Wanting to grow means change and if I want to continue, then I will have to accept the facts.</p>
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://kevinraymond.smallpict.com2014/08/26/iAmNotANaturalBlogger.html" title="I Am Not a Natural Blogger" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://kevinraymond.smallpict.com">Home</a><span class="divider">/</span><li><a href="http://kevinraymond.smallpict.com/2014">2014</a><span class="divider">/</span><li><a href="http://kevinraymond.smallpict.com/2014/08">August 2014</a><span class="divider">/</span><li><a href="http://kevinraymond.smallpict.com/2014/08/26">August 26</a></li></ul>
+								</div>
+							<h2>Delegating is Hard</h2>
+							</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>This will be the second year I've had help in the fabrication shop from time to time. The extra hands have been nothing but a god send for helping to move the company forward (duh). Every new step we take as a business means a change from how I've done things for 10+ years in the shop. Wanting to grow means change and if I want to continue, then I will have to accept the facts.</p>
 
 <p>Truth, change is not my best trait. None of us really like to change, staying in our comfort zone is well, comfortable. We all hate the change until that move in a new direction brings positive results or ease to how we did things previous. I know this has happened to me multiple times.</p>
 
@@ -185,43 +301,20 @@
 
 <p>Now, not only do I have to teach what I know, I have to figure the process for each piece and delegate those to the helper on the floor. Completely foreign to me as a fabricator and something I desperately need as a quality boss.</p>
 
-<p>Giving up control of the finished product has also been something I've had trouble with. Making sure what leaves the shop is up to the standards I set for myself and expect from whoever works here. All of these things are skills I need to master if I'm going to run a quality company with employees who want to be here and do good work.</p>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="26/iAmNotANaturalBlogger.html">I Am Not a Natural Blogger</a></div>
-		<p>One skill I lack is getting my thoughts out in a well maintained form other than that of crazy, messy notes strewn about my desk like a post tornado in July. I have never been good at being real with my thoughts. I suspect many of us suffer the same demon. Although, I have kept a journal for years and loved blogging since I started a few years ago. Problem is, being honest with myself does not come natural. My thoughts are very short, to the point and sometimes when I want to get more in depth I lose the flow of the content and repeat myself. Everything turns into a giant, boring circle of words with dry, boring topics. The process can be painful.</p>
-
-<p>One of my goals is to be more open and honest about what goes on in my life and business. Obviously, not completely open, but more transparent about what is going on in my mind, working thoughts out in written word. Maybe even getting some feedback on issues involving business and growth.</p>
-
-<p>The last few months have been so busy with work I haven't had much time to concentrate on anything. Hell, even trying to get my blog up and running the way I want has been a chore and I'm still not there. My mind goes from one thing to the next too fast. Hence the reason to work things out in the open, on my blog, Facebook or Twitter feed.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/25/14; 10:43:06 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="26/iAmNotANaturalBlogger.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="24/testingMyGithubPage.html">Testing My Github Page</a></div>
-		<p>Yet another test to set up a new blog <img title=':blush:' alt=':blush:' class='emoji' src='http://fargo.io/code/emojify/images/emoji/blush.png' align='absmiddle' /></p>
-
-<p>Now I have to remember how to set the blog up again.</p>
-
-<p>Still trying to get this blog up and running again.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/24/14; 07:16:38 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="24/testingMyGithubPage.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Tue, Aug 26, 2014 at  1:13 PM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/gm4gdb9hout8unx/myBlog.opml?dl=0Mon, 25 Aug 2014 00:16:38 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/smallpict/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="" target="_blank">Kevin Raymond</a>, <span id="idWhenCreated">Sunday, August 24, 2014 at  7:16 PM</span>.</div>
-					</div>
+<p>Giving up control of the finished product has also been something I've had trouble with. Making sure what leaves the shop is up to the standards I set for myself and expect from whoever works here. All of these things are skills I need to master if I'm going to run a quality company with employees who want to be here and do good work.</p></div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Tue, Aug 26, 2014 at  1:13 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/gm4gdb9hout8unx/myBlog.opml?dl=0Tue, 26 Aug 2014 12:37:30 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/smallpict/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="" target="_blank">Kevin Raymond</a>, <span id="idWhenCreated">Tuesday, August 26, 2014 at  7:37 AM</span>.  <span class="spSlogan" style="float: right;"><i>Greetings, citizen of Planet Earth. We are your overlords. :-)</i></span></div>
+							</div>
+						</div>
+						</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
+			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>
